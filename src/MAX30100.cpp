@@ -8,9 +8,6 @@
 #include <Wire.h>
 #include "MAX30100.h"
 
-MAX30100::MAX30100(){
-
-}
 
 void MAX30100::setLEDs(pulseWidth pw, ledCurrent red, ledCurrent ir){
   uint8_t reg = I2CreadByte(MAX30100_ADDRESS, MAX30100_SPO2_CONFIG);
